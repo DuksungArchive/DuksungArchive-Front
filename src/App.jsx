@@ -1,11 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
+import Router from "../Router";
 
 function App() {
-  return (
-    <>
-      <p>홈</p>
-    </>
-  );
+  return <Router />;
 }
 
 export default App;

@@ -1,5 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import * as A from "./TopBar.style";
+import LogoSvg from "assets/logo/logo-long-100x27.svg";
+import SearchSvg from "assets/icons/search-30x30.svg";
+import GuestBookSvg from "assets/icons/guest-book-30x30.svg";
+// import HomeSvg from "assets/icons/home-30x30.svg";
 
 export default function TopBar() {
   const navigate = useNavigate();
@@ -13,24 +17,21 @@ export default function TopBar() {
   const handleMoveToGuestBook = () => {
     navigate(`/guest-book`);
   };
-  const handleMoveToProjectList = () => {
-    //삭제예정
-    navigate(`/project-list`);
-  };
-  const handleMoveToProjectDetail = () => {
-    //삭제예정
-    navigate(`/project-detail`);
-  };
 
   return (
     <>
       <A.BarContainer>
-        top bar
-        <button onClick={handleMoveToMain}>DS Archive</button>
-        <button onClick={handleMoveToSearch}>검색</button>
-        <button onClick={handleMoveToGuestBook}>방명록</button>
-        <button onClick={handleMoveToProjectList}>(임시)프로젝트 목록</button>
-        <button onClick={handleMoveToProjectDetail}>(임시)프로젝트 상세</button>
+        <A.LogoImgContainer onClick={handleMoveToMain}>
+          <A.LogoImg src={LogoSvg} alt="DS archive" />
+        </A.LogoImgContainer>
+        <A.NavIconsContainer>
+          <A.NavIconBtn onClick={handleMoveToSearch}>
+            <A.NavIconImg src={SearchSvg} alt="search" />
+          </A.NavIconBtn>
+          <A.NavIconBtn onClick={handleMoveToGuestBook}>
+            <A.NavIconImg src={GuestBookSvg} alt="guest book" />
+          </A.NavIconBtn>
+        </A.NavIconsContainer>
       </A.BarContainer>
     </>
   );

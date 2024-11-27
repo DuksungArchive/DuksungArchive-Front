@@ -4,8 +4,10 @@ import font from "styles/font";
 
 export const CompContainer = styled.div`
   position: relative;
+  overflow: hidden;
 
-  margin-top: 6.7rem;
+  padding-top: 6.7rem;
+  padding-bottom: 8rem;
   width: 100%;
 
   display: flex;
@@ -35,7 +37,7 @@ export const SubText = styled.p`
 
 export const BackgroundGlowImgContainer = styled.div`
   position: absolute;
-  top: -11.4rem;
+  top: -5.2rem;
 
   width: 48.9rem;
   height: 39.1rem;

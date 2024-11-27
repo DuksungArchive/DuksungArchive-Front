@@ -29,18 +29,4 @@
 
 1. `main` 브랜치에서 새로운 브랜치를 생성.
 2. 작업을 완료하고 커밋 메시지에 맞게 커밋.
-3. Pull Request를 생성 / 팀원들의 리뷰.
-4. 리뷰가 완료되면 `main` 브랜치로 병합.
-5. 병합 후, 필요시 배포.
-
-**예시**:
-
-```bash
-# 새로운 기능 개발
-git checkout -b feature/add-login-page
-# 작업 완료 후, 본인 브랜치로 push
-git add .
-git commit -m "Feat: 로그인 페이지"
-git push origin feature/add-login-page
-# push 후, pull request & 코드리뷰 요청
-```
+3. Pull Request를 생성 후 충돌 없으면 `main` 브랜치로 병합.

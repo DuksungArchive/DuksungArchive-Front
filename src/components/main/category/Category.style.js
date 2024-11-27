@@ -4,6 +4,8 @@ import font from "styles/font";
 
 // CategoryList
 export const CompContainer = styled.div`
+  position: relative;
+
   margin-top: 11.5rem; //
   width: 100%;
 
@@ -50,8 +52,24 @@ export const DescriptionSpan = styled.span`
 export const CategoryCardList = styled.ul`
   margin-top: 2.4rem;
 `;
+// 배경 글로우
+export const BackgroundGlowImgContainer = styled.div`
+  position: absolute;
+  top: -16.8rem;
+
+  width: 39rem;
+  height: 36.5rem;
+
+  z-index: -1;
+`;
+export const BackgroundGlowImg = styled.img`
+  width: 39rem;
+  height: 36.5rem;
+`;
 // CategoryCard
 export const CategoryCardContainer = styled.li`
+  position: relative;
+
   margin-bottom: 1.6rem;
   width: 35rem;
   height: 14rem;
@@ -69,4 +87,21 @@ export const CategoryCardContainer = styled.li`
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 
   cursor: pointer;
+`;
+// 배경 글로우
+export const CategoryBackImg = styled.div`
+  position: absolute;
+  top: 2.8rem;
+
+  width: calc(35rem / 5 * 4);
+  height: calc(14rem / 5 * 4);
+
+  border-radius: 12px;
+  opacity: 0.8;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(${(props) => props.$CategoryPng}) lightgray 50% / cover no-repeat;
+  filter: blur(20px);
+
+  z-index: -1;
 `;

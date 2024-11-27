@@ -17,7 +17,7 @@ export default function MainInfo() {
         </A.SubText>
 
         <A.BackgroundGlowImgContainer>
-          <A.BackgroundGlowImg src={BackgroundPng} alt="DS archive" />
+          <A.BackgroundGlowImg src={BackgroundPng} alt="background" />
         </A.BackgroundGlowImgContainer>
       </A.CompContainer>
     </>

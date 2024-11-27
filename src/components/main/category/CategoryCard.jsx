@@ -12,6 +12,7 @@ export default function CategoryCard({ CategoryPng, categoryName }) {
     <>
       <A.CategoryCardContainer onClick={handleMoveToProjectList} $CategoryPng={CategoryPng}>
         {categoryName}
+        <A.CategoryBackImg $CategoryPng={CategoryPng} />
       </A.CategoryCardContainer>
     </>
   );

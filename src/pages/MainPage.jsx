@@ -7,7 +7,6 @@ export default function MainPage() {
   return (
     <>
       <MainInfo />
-      {/* 배경 glow => 뒤로 보내기 */}
       <MajorList />
       <CategoryList />
       <Footer />

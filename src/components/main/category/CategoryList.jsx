@@ -5,6 +5,7 @@ import Category1Png from "assets/category-img/category1-350x140.png";
 import Category2Png from "assets/category-img/category2-350x140.png";
 import Category3Png from "assets/category-img/category3-350x140.png";
 import Category4Png from "assets/category-img/category4-350x140.png";
+import BackgroundPng from "assets/background-glow/main-page-glow2.png";
 
 export default function CategoryList() {
   return (
@@ -13,6 +14,10 @@ export default function CategoryList() {
         <A.DescriptionText $StarSvg={StarSvg}>
           <A.DescriptionSpan>카테고리별</A.DescriptionSpan>로 작품을 모아봐요
         </A.DescriptionText>
+
+        <A.BackgroundGlowImgContainer>
+          <A.BackgroundGlowImg src={BackgroundPng} alt="background" />
+        </A.BackgroundGlowImgContainer>
 
         <A.CategoryCardList>
           <CategoryCard CategoryPng={Category1Png} categoryName="앱&웹" />

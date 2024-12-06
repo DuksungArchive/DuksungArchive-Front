@@ -3,15 +3,16 @@ import color from "styles/color";
 import font from "styles/font";
 
 // MajorList
-export const ListContainer = styled.div`
-  width: 100%;
+// export const ListContainer = styled.div`
+//   width: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-start;
 
-  overflow-x: scroll;
-`;
+//   overflow-x: scroll;
+// `;
+// export const SlideCenter = styled.div``;
 
 // MajorCard
 export const CompContainer = styled.div`
@@ -22,6 +23,14 @@ export const CompContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* transform: scale(0.8); */
+  transition: transform 0.5s ease;
+
+  /* &.slick-center {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  } */
 `;
 export const PosterImg = styled.div`
   width: 25.6rem;
@@ -29,6 +38,8 @@ export const PosterImg = styled.div`
 
   border-radius: 12px;
   background: url(${(props) => props.$MajorPng}) lightgray 50% / cover no-repeat;
+
+  cursor: pointer;
 `;
 export const MajorName = styled.h4`
   margin-top: 2.8rem;

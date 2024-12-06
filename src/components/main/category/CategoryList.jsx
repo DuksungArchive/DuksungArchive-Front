@@ -20,10 +20,10 @@ export default function CategoryList() {
         </A.BackgroundGlowImgContainer>
 
         <A.CategoryCardList>
-          <CategoryCard CategoryPng={Category1Png} categoryName="앱&웹" />
-          <CategoryCard CategoryPng={Category2Png} categoryName="인공지능" />
-          <CategoryCard CategoryPng={Category3Png} categoryName="IoT" />
-          <CategoryCard CategoryPng={Category4Png} categoryName="게임" />
+          <CategoryCard index={0} CategoryPng={Category1Png} categoryName="앱&웹" />
+          <CategoryCard index={1} CategoryPng={Category2Png} categoryName="인공지능" />
+          <CategoryCard index={2} CategoryPng={Category3Png} categoryName="IoT" />
+          <CategoryCard index={3} CategoryPng={Category4Png} categoryName="게임" />
         </A.CategoryCardList>
       </A.CompContainer>
     </>

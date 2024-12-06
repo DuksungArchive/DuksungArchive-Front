@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import * as A from "./Category.style";
 
-export default function CategoryCard({ CategoryPng, categoryName }) {
+export default function CategoryCard({ index, CategoryPng, categoryName }) {
   const navigate = useNavigate();
 
   const handleMoveToProjectList = () => {
-    navigate(`/project-list`);
+    navigate(`/project-list?category=${index}`);
   };
 
   return (
